@@ -1,0 +1,129 @@
+/* צבעים כלליים */
+:root {
+    --background-color: #FFF0F5; 
+    --primary-color: #FFB6B9; 
+    --secondary-color: #FFD3B6; 
+    --text-color: #5D4157; 
+    --accent-color: #FFC3A0; 
+}
+
+
+
+/* עיצוב כללי */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+/* מרכז את כל האתר */
+.container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+/* עיצוב הכותרת העליונה השנייה*/
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px; 
+}
+
+/* קו מפריד */
+hr {
+    border: none;
+    border-top: 3px dotted var(--accent-color);
+    width: 50%;
+    margin: 40px auto;
+}
+
+/* עיצוב כותרות */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--text-color);
+    font-size: 50px; 
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--text-color);
+    font-size: 40px; 
+}
+
+/* רשימות */
+ul {
+    list-style-type: none;
+    padding-left: 40px;
+}
+
+/* תמונות של העוגות */
+div img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+}
+/*  הגדלה קטנה של התמונות*/
+div img:hover {
+    transform: scale(1.1);
+}
+
+/*קישור */
+a:link, a:visited {
+    display: inline-block;
+    background-color: var(--primary-color); 
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+/* עיצוב כשהעכבר עובר מעל הקישור */
+a:hover {
+    background-color: var(--accent-color); 
+    color: white;
+}
+
+
+/* פוטר */
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/*מספר פיקסלים קטנים מ600*/
+@media (max-width: 600px) {
+    
+    /* כותרות קטנות יותר */
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    /* התמונות יהיו אחת מתחת לשנייה  */
+    div img {
+        display: block;
+        width: 90%; 
+        max-width: 300px;
+        margin: 10px auto; 
+        height: auto;
+    }
+}
